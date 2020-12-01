@@ -30,8 +30,7 @@ class NPC:
         self.img_name = img_name
 
     def __str__(self):
-        return f"{self.name}: {self.img_name}"
-        #return f"{self.name} ({self.gender}): {self.info}"
+        return f"{self.name} ({self.gender}): {self.info}"
 
 class Location:
     def __init__(self, url, name, info, previous_location, next_location):
@@ -65,7 +64,6 @@ class Fish:
         self.price = price
 
     def __str__(self):
-        #return f"{self.name}({self.price}) can be found at: " + ", ".join(self.location)
         return f"{self.name}({self.price}) can be found at: {self.location}"
 
 def open_cache():
